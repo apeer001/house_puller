@@ -23,7 +23,7 @@ def soup_listing_call():
     soup = bs4.BeautifulSoup(property_listing_request.content, 'lxml')
     return soup
 
-def parse_soup_houses():
+def parse_soup_houses(soup):
     houses_data = []
 
     # capture all divs in HTML that match house listing square with details about the house in it
